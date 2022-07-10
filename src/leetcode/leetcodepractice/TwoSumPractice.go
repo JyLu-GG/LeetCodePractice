@@ -1,7 +1,5 @@
 package leetcodepractice
 
-import "fmt"
-
 func TwoSum1(nums []int, target int) []int {
 	index := 0
 	otherIndex := -1
@@ -35,15 +33,9 @@ func TwoSum2(nums []int, target int) []int {
 	var dic = make(map[int]int)
 	for i := 0; i < len(nums); i++ {
 		if v, ok := dic[target-nums[i]]; ok {
-			fmt.Println(ok)
-			fmt.Println(v)
-			fmt.Println(dic[v])
-			fmt.Println(dic[target-nums[i]])
 			return []int{v, i}
 		} else {
 			dic[nums[i]] = i
-			fmt.Println("check fail")
-			fmt.Printf("%d, %d\n", nums[i], dic[nums[i]])
 		}
 	}
 	return nil
