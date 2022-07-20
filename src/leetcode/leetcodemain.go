@@ -27,4 +27,16 @@ func main() {
 	fmt.Println(ans4)
 	fmt.Println(ans5)
 	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Merge Two Sorted Lists")
+	list1 := []int{1, 2, 4}
+	node1 := leetcodepractice.ArrayToListNode(list1)
+	list2 := []int{1, 3, 4}
+	node2 := leetcodepractice.ArrayToListNode(list2)
+	ans6 := leetcodepractice.MergeTwoLists(node1, node2)
+	for ans6 != nil {
+		fmt.Printf("Ans6 val: %d\n", ans6.Val)
+		ans6 = ans6.Next
+	}
+	fmt.Println("")
 }
