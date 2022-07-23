@@ -39,4 +39,17 @@ func main() {
 		ans6 = ans6.Next
 	}
 	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Add two numbers")
+	list3 := []int{9, 9, 9, 9, 9, 9, 9}
+	node3 := leetcodepractice.ArrayToListNode(list3)
+	list4 := []int{9, 9, 9, 9}
+	node4 := leetcodepractice.ArrayToListNode(list4)
+	ans7 := leetcodepractice.AddTwoNumbers(node3, node4)
+	for ans7 != nil {
+		fmt.Printf("Ans7 val: %d\n", ans7.Val)
+		ans7 = ans7.Next
+	}
+	fmt.Println("")
+
 }
