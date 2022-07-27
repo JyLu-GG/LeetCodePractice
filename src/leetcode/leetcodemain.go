@@ -52,4 +52,58 @@ func main() {
 	}
 	fmt.Println("")
 
+	fmt.Println("LeetCode Practice Valid Parentheses")
+	s := "([)]"
+	// s := "{[]}"
+	// s := "()[]{}"
+	ans8 := leetcodepractice.IsValid(s)
+	fmt.Printf("%t\n", ans8)
+	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Design Circular Queue")
+	k := 4
+	value := 999
+	obj := leetcodepractice.Constructor(k)
+	fmt.Printf("lens: %d\n", len(obj.Q))
+	fmt.Printf("cap: %d\n", cap(obj.Q))
+	param_1 := obj.EnQueue(value)
+	param_3 := obj.Front()
+	param_4 := obj.Rear()
+	param_5 := obj.IsEmpty()
+	param_6 := obj.IsFull()
+	param_2 := obj.DeQueue()
+	fmt.Printf("en: %t, de: %t, front: %d, rear: %d, empty: %t, full: %t\n", param_1, param_2, param_3, param_4, param_5, param_6)
+	obj.EnQueue(1)
+	obj.EnQueue(2)
+	obj.EnQueue(3)
+	param_1 = obj.EnQueue(4)
+	param_3 = obj.Front()
+	param_4 = obj.Rear()
+	param_5 = obj.IsEmpty()
+	param_6 = obj.IsFull()
+	fmt.Printf("en: %t, de: %t, front: %d, rear: %d, empty: %t, full: %t\n", param_1, param_2, param_3, param_4, param_5, param_6)
+	fmt.Printf("lens: %d\n", len(obj.Q))
+	fmt.Printf("cap: %d\n", cap(obj.Q))
+	param_1 = obj.EnQueue(5)
+	param_3 = obj.Front()
+	param_4 = obj.Rear()
+	param_5 = obj.IsEmpty()
+	param_6 = obj.IsFull()
+	fmt.Printf("en: %t, de: %t, front: %d, rear: %d, empty: %t, full: %t\n", param_1, param_2, param_3, param_4, param_5, param_6)
+	param_2 = obj.DeQueue()
+	param_3 = obj.Front()
+	param_4 = obj.Rear()
+	param_5 = obj.IsEmpty()
+	param_6 = obj.IsFull()
+	fmt.Printf("en: %t, de: %t, front: %d, rear: %d, empty: %t, full: %t\n", param_1, param_2, param_3, param_4, param_5, param_6)
+	obj.DeQueue()
+	obj.DeQueue()
+	param_2 = obj.DeQueue()
+	param_3 = obj.Front()
+	param_4 = obj.Rear()
+	param_5 = obj.IsEmpty()
+	param_6 = obj.IsFull()
+	fmt.Printf("en: %t, de: %t, front: %d, rear: %d, empty: %t, full: %t\n", param_1, param_2, param_3, param_4, param_5, param_6)
+	fmt.Println("")
+
 }
