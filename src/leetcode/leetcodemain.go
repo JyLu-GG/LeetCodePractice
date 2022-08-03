@@ -106,4 +106,13 @@ func main() {
 	fmt.Printf("en: %t, de: %t, front: %d, rear: %d, empty: %t, full: %t\n", param_1, param_2, param_3, param_4, param_5, param_6)
 	fmt.Println("")
 
+	fmt.Println("LeetCode Practice Binary Tree Inorder Traversal")
+	list5 := []int{1, leetcodepractice.NULL, 2, 3}
+	treenode1 := leetcodepractice.IntArrayToTreeNode(list5)
+	ans9 := leetcodepractice.InorderTraversal(treenode1)
+	for _, v := range ans9 {
+		fmt.Printf("%d", v)
+	}
+	fmt.Println("")
+	fmt.Println("")
 }
