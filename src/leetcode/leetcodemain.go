@@ -115,4 +115,30 @@ func main() {
 	}
 	fmt.Println("")
 	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Flatten Binary Tree to Linked List")
+	list6 := []int{1, 2, 5, 3, 4, leetcodepractice.NULL, 6}
+	treenode2 := leetcodepractice.IntArrayToTreeNode(list6)
+	leetcodepractice.Flatten(treenode2)
+	tmp := treenode2
+	for tmp.Right != nil{
+		fmt.Println(tmp.Right)
+		tmp = tmp.Right
+	}
+	treenode2 = leetcodepractice.IntArrayToTreeNode(list6)
+	leetcodepractice.Flatten2(treenode2)
+	tmp = treenode2
+	for tmp.Right != nil{
+		fmt.Println(tmp.Right)
+		tmp = tmp.Right
+	}
+	treenode2 = leetcodepractice.IntArrayToTreeNode(list6)
+	leetcodepractice.Flatten3(treenode2)
+	tmp = treenode2
+	for tmp.Right != nil{
+		fmt.Println(tmp.Right)
+		tmp = tmp.Right
+	}
+	fmt.Println("")
+	fmt.Println("")
 }
