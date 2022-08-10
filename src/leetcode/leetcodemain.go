@@ -121,24 +121,46 @@ func main() {
 	treenode2 := leetcodepractice.IntArrayToTreeNode(list6)
 	leetcodepractice.Flatten(treenode2)
 	tmp := treenode2
-	for tmp.Right != nil{
+	for tmp.Right != nil {
 		fmt.Println(tmp.Right)
 		tmp = tmp.Right
 	}
 	treenode2 = leetcodepractice.IntArrayToTreeNode(list6)
 	leetcodepractice.Flatten2(treenode2)
 	tmp = treenode2
-	for tmp.Right != nil{
+	for tmp.Right != nil {
 		fmt.Println(tmp.Right)
 		tmp = tmp.Right
 	}
 	treenode2 = leetcodepractice.IntArrayToTreeNode(list6)
 	leetcodepractice.Flatten3(treenode2)
 	tmp = treenode2
-	for tmp.Right != nil{
+	for tmp.Right != nil {
 		fmt.Println(tmp.Right)
 		tmp = tmp.Right
 	}
 	fmt.Println("")
+	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Roman to Integer")
+	var str string = "III"
+	var ans10 = leetcodepractice.RomanToInt(str)
+	fmt.Printf("ans10: %d\n", ans10)
+	str = "LVIII"
+	ans10 = leetcodepractice.RomanToInt(str)
+	fmt.Printf("ans10: %d\n", ans10)
+	str = "MCMXCIV"
+	ans10 = leetcodepractice.RomanToInt(str)
+	fmt.Printf("ans10: %d\n", ans10)
+
+	str = "III"
+	ans10 = leetcodepractice.RomanToInt2(str)
+	fmt.Printf("ans10: %d\n", ans10)
+	str = "LVIII"
+	ans10 = leetcodepractice.RomanToInt2(str)
+	fmt.Printf("ans10: %d\n", ans10)
+	str = "MCMXCIV"
+	ans10 = leetcodepractice.RomanToInt2(str)
+	fmt.Printf("ans10: %d\n", ans10)
 	fmt.Println("")
 }
