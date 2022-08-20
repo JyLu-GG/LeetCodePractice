@@ -163,4 +163,30 @@ func main() {
 	ans10 = leetcodepractice.RomanToInt2(str)
 	fmt.Printf("ans10: %d\n", ans10)
 	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Longest Substring Without Repeating Characters")
+	var str1 string = "abcabcbb"
+	var ans11 = leetcodepractice.LengthOfLongestSubstring(str1)
+	fmt.Printf("ans11: %d\n", ans11)
+	str1 = "bbbbb"
+	ans11 = leetcodepractice.LengthOfLongestSubstring(str1)
+	fmt.Printf("ans11: %d\n", ans11)
+	str1 = "pwwkew"
+	ans11 = leetcodepractice.LengthOfLongestSubstring(str1)
+	fmt.Printf("ans11: %d\n", ans11)
+
+	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Add Binary")
+	var strA string = "11"
+	var strB string = "1"
+	var ans12 = leetcodepractice.AddBinary(strA, strB)
+	fmt.Printf("ans12: %s\n", ans12)
+
+	strA = "1010"
+	strB = "1011"
+	ans12 = leetcodepractice.AddBinary(strA, strB)
+	fmt.Printf("ans12: %s\n", ans12)
+
+	fmt.Println("")
 }
