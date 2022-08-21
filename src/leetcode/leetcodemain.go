@@ -189,4 +189,22 @@ func main() {
 	fmt.Printf("ans12: %s\n", ans12)
 
 	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Divide Two Integer")
+	var ans13 = leetcodepractice.Divide(10, 5)
+	fmt.Printf("ans13: %d\n", ans13)
+
+	ans13 = leetcodepractice.Divide(-10, 5)
+	fmt.Printf("ans13: %d\n", ans13)
+
+	ans13 = leetcodepractice.Divide(-1, -1)
+	fmt.Printf("ans13: %d\n", ans13)
+
+	ans13 = leetcodepractice.Divide(2147483647, 3)
+	fmt.Printf("ans13: %d\n", ans13)
+
+	ans13 = leetcodepractice.Divide2(2147483647, 3)
+	fmt.Printf("ans13: %d\n", ans13)
+
+	fmt.Println("")
 }
