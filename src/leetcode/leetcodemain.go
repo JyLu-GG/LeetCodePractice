@@ -207,4 +207,19 @@ func main() {
 	fmt.Printf("ans13: %d\n", ans13)
 
 	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Palindrome Number")
+	var ans14 = leetcodepractice.IsPalindrome(121)
+	fmt.Printf("ans14: %t\n", ans14)
+
+	ans14 = leetcodepractice.IsPalindrome(-121)
+	fmt.Printf("ans14: %t\n", ans14)
+
+	ans14 = leetcodepractice.IsPalindrome(10)
+	fmt.Printf("ans14: %t\n", ans14)
+
+	ans14 = leetcodepractice.IsPalindrome(123)
+	fmt.Printf("ans14: %t\n", ans14)
+
+	fmt.Println("")
 }
