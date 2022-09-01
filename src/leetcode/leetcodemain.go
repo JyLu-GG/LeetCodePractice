@@ -208,20 +208,20 @@ func main() {
 
 	// fmt.Println("")
 
-	fmt.Println("LeetCode Practice Palindrome Number")
-	var ans14 = leetcodepractice.IsPalindrome(121)
-	fmt.Printf("ans14: %t\n", ans14)
+	// fmt.Println("LeetCode Practice Palindrome Number")
+	// var ans14 = leetcodepractice.IsPalindrome(121)
+	// fmt.Printf("ans14: %t\n", ans14)
 
-	ans14 = leetcodepractice.IsPalindrome(-121)
-	fmt.Printf("ans14: %t\n", ans14)
+	// ans14 = leetcodepractice.IsPalindrome(-121)
+	// fmt.Printf("ans14: %t\n", ans14)
 
-	ans14 = leetcodepractice.IsPalindrome(10)
-	fmt.Printf("ans14: %t\n", ans14)
+	// ans14 = leetcodepractice.IsPalindrome(10)
+	// fmt.Printf("ans14: %t\n", ans14)
 
-	ans14 = leetcodepractice.IsPalindrome(123)
-	fmt.Printf("ans14: %t\n", ans14)
+	// ans14 = leetcodepractice.IsPalindrome(123)
+	// fmt.Printf("ans14: %t\n", ans14)
 
-	fmt.Println("")
+	// fmt.Println("")
 
 	fmt.Println("LeetCode Practice Gray code")
 	var ans15 = leetcodepractice.GrayCode(2)
@@ -229,6 +229,18 @@ func main() {
 
 	ans15 = leetcodepractice.GrayCode(1)
 	fmt.Printf("ans15: %d\n", ans15)
+
+	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Remove Linked List Elements")
+	list5 := []int{1, 2, 6, 3, 4, 5, 6}
+	node5 := leetcodepractice.ArrayToListNode(list5)
+	val := 6
+	var ans16 = leetcodepractice.RemoveElements(node5, val)
+	for ans16 != nil {
+		fmt.Printf("Ans16 val: %d\n", ans16.Val)
+		ans16 = ans16.Next
+	}
 
 	fmt.Println("")
 }
