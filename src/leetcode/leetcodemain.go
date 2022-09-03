@@ -223,14 +223,14 @@ func main() {
 
 	// fmt.Println("")
 
-	fmt.Println("LeetCode Practice Gray code")
-	var ans15 = leetcodepractice.GrayCode(2)
-	fmt.Printf("ans15: %d\n", ans15)
+	// fmt.Println("LeetCode Practice Gray code")
+	// var ans15 = leetcodepractice.GrayCode(2)
+	// fmt.Printf("ans15: %d\n", ans15)
 
-	ans15 = leetcodepractice.GrayCode(1)
-	fmt.Printf("ans15: %d\n", ans15)
+	// ans15 = leetcodepractice.GrayCode(1)
+	// fmt.Printf("ans15: %d\n", ans15)
 
-	fmt.Println("")
+	// fmt.Println("")
 
 	fmt.Println("LeetCode Practice Remove Linked List Elements")
 	list5 := []int{1, 2, 6, 3, 4, 5, 6}
@@ -240,6 +240,17 @@ func main() {
 	for ans16 != nil {
 		fmt.Printf("Ans16 val: %d\n", ans16.Val)
 		ans16 = ans16.Next
+	}
+
+	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Swap Nodes in Pairs")
+	list6 := []int{1, 2, 3, 4}
+	node6 := leetcodepractice.ArrayToListNode(list6)
+	var ans17 = leetcodepractice.SwapPairs(node6)
+	for ans17 != nil {
+		fmt.Printf("Ans17 val: %d\n", ans17.Val)
+		ans17 = ans17.Next
 	}
 
 	fmt.Println("")
