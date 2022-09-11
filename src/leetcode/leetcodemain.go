@@ -244,16 +244,16 @@ func main() {
 
 	// fmt.Println("")
 
-	fmt.Println("LeetCode Practice Swap Nodes in Pairs")
-	list6 := []int{1, 2, 3, 4}
-	node6 := leetcodepractice.ArrayToListNode(list6)
-	var ans17 = leetcodepractice.SwapPairs(node6)
-	for ans17 != nil {
-		fmt.Printf("Ans17 val: %d\n", ans17.Val)
-		ans17 = ans17.Next
-	}
+	// fmt.Println("LeetCode Practice Swap Nodes in Pairs")
+	// list6 := []int{1, 2, 3, 4}
+	// node6 := leetcodepractice.ArrayToListNode(list6)
+	// var ans17 = leetcodepractice.SwapPairs(node6)
+	// for ans17 != nil {
+	// 	fmt.Printf("Ans17 val: %d\n", ans17.Val)
+	// 	ans17 = ans17.Next
+	// }
 
-	fmt.Println("")
+	// fmt.Println("")
 
 	fmt.Println("LeetCode Practice Majority Element")
 	list7 := []int{3, 2, 3}
@@ -267,6 +267,16 @@ func main() {
 	list7 = []int{3, 2, 3}
 	ans18 = leetcodepractice.MajorityElement3(list7)
 	fmt.Printf("Ans18 val: %d\n", ans18)
+
+	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Merge Sorted Array")
+	list8 := []int{1, 2, 3, 0, 0, 0}
+	m := 3
+	list9 := []int{2, 5, 6}
+	n := 3
+	leetcodepractice.Merge(list8, m, list9, n)
+	fmt.Printf("list8 val: %d\n", list8)
 
 	fmt.Println("")
 }
