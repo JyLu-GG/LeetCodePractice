@@ -3,25 +3,25 @@ package leetcodepractice
 import "sort"
 
 func MajorityElement(nums []int) int {
-	// elementmap := make(map[int]int)
-	// max := len(nums) / 2
-	// for _, val := range nums {
-	// 	elementmap[val]++
-	// 	if elementmap[val] > max {
-	// 		return val
-	// 	}
-	// }
-	// return -1
 	elementmap := make(map[int]int)
-	max, ret := 0, 0
+	max := len(nums) / 2
 	for _, val := range nums {
 		elementmap[val]++
 		if elementmap[val] > max {
-			max = elementmap[val]
-			ret = val
+			return val
 		}
 	}
-	return ret
+	return -1
+	// elementmap := make(map[int]int)
+	// max, ret := 0, 0
+	// for _, val := range nums {
+	// 	elementmap[val]++
+	// 	if elementmap[val] > max {
+	// 		max = elementmap[val]
+	// 		ret = val
+	// 	}
+	// }
+	// return ret
 }
 
 func MajorityElement2(nums []int) int {
