@@ -232,17 +232,17 @@ func main() {
 
 	// fmt.Println("")
 
-	fmt.Println("LeetCode Practice Remove Linked List Elements")
-	list5 := []int{1, 2, 6, 3, 4, 5, 6}
-	node5 := leetcodepractice.ArrayToListNode(list5)
-	val := 6
-	var ans16 = leetcodepractice.RemoveElements(node5, val)
-	for ans16 != nil {
-		fmt.Printf("Ans16 val: %d\n", ans16.Val)
-		ans16 = ans16.Next
-	}
+	// fmt.Println("LeetCode Practice Remove Linked List Elements")
+	// list5 := []int{1, 2, 6, 3, 4, 5, 6}
+	// node5 := leetcodepractice.ArrayToListNode(list5)
+	// val := 6
+	// var ans16 = leetcodepractice.RemoveElements(node5, val)
+	// for ans16 != nil {
+	// 	fmt.Printf("Ans16 val: %d\n", ans16.Val)
+	// 	ans16 = ans16.Next
+	// }
 
-	fmt.Println("")
+	// fmt.Println("")
 
 	fmt.Println("LeetCode Practice Swap Nodes in Pairs")
 	list6 := []int{1, 2, 3, 4}
@@ -252,6 +252,21 @@ func main() {
 		fmt.Printf("Ans17 val: %d\n", ans17.Val)
 		ans17 = ans17.Next
 	}
+
+	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Majority Element")
+	list7 := []int{3, 2, 3}
+	var ans18 = leetcodepractice.MajorityElement(list7)
+	fmt.Printf("Ans18 val: %d\n", ans18)
+
+	list7 = []int{3, 2, 3}
+	ans18 = leetcodepractice.MajorityElement2(list7)
+	fmt.Printf("Ans18 val: %d\n", ans18)
+
+	list7 = []int{3, 2, 3}
+	ans18 = leetcodepractice.MajorityElement3(list7)
+	fmt.Printf("Ans18 val: %d\n", ans18)
 
 	fmt.Println("")
 }
