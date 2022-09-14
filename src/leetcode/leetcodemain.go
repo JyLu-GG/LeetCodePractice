@@ -255,20 +255,20 @@ func main() {
 
 	// fmt.Println("")
 
-	fmt.Println("LeetCode Practice Majority Element")
-	list7 := []int{3, 2, 3}
-	var ans18 = leetcodepractice.MajorityElement(list7)
-	fmt.Printf("Ans18 val: %d\n", ans18)
+	// fmt.Println("LeetCode Practice Majority Element")
+	// list7 := []int{3, 2, 3}
+	// var ans18 = leetcodepractice.MajorityElement(list7)
+	// fmt.Printf("Ans18 val: %d\n", ans18)
 
-	list7 = []int{3, 2, 3}
-	ans18 = leetcodepractice.MajorityElement2(list7)
-	fmt.Printf("Ans18 val: %d\n", ans18)
+	// list7 = []int{3, 2, 3}
+	// ans18 = leetcodepractice.MajorityElement2(list7)
+	// fmt.Printf("Ans18 val: %d\n", ans18)
 
-	list7 = []int{3, 2, 3}
-	ans18 = leetcodepractice.MajorityElement3(list7)
-	fmt.Printf("Ans18 val: %d\n", ans18)
+	// list7 = []int{3, 2, 3}
+	// ans18 = leetcodepractice.MajorityElement3(list7)
+	// fmt.Printf("Ans18 val: %d\n", ans18)
 
-	fmt.Println("")
+	// fmt.Println("")
 
 	fmt.Println("LeetCode Practice Merge Sorted Array")
 	list8 := []int{1, 2, 3, 0, 0, 0}
@@ -277,6 +277,21 @@ func main() {
 	n := 3
 	leetcodepractice.Merge(list8, m, list9, n)
 	fmt.Printf("list8 val: %d\n", list8)
+
+	fmt.Println("")
+
+	fmt.Println("LeetCode Practice Remove Duplicates from Sorted Array")
+	list10 := []int{1, 1, 2}
+	ans19 := leetcodepractice.RemoveDuplicates(list10)
+	fmt.Printf("k: %d ,list10 val: %d\n", ans19, list10)
+
+	list10 = []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
+	ans19 = leetcodepractice.RemoveDuplicates2(list10)
+	fmt.Printf("k: %d ,list10 val: %d\n", ans19, list10)
+
+	list10 = []int{1, 1}
+	ans19 = leetcodepractice.RemoveDuplicates2(list10)
+	fmt.Printf("k: %d ,list10 val: %d\n", ans19, list10)
 
 	fmt.Println("")
 }
